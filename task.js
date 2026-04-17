@@ -1,6 +1,7 @@
 const button = document.querySelector(".dropdown");
 const dropdown__value = document.querySelector(".dropdown__value");
 const dropdown__list = document.querySelector(".dropdown__list");
+console.log(dropdown__list.classList);
 
 
 const toggleDropdownList = function() {
@@ -13,7 +14,6 @@ const buttonsList = document.querySelectorAll(".dropdown__item");
 buttonsList.forEach((A) => {
     A.addEventListener("click", (event) => {
         event.preventDefault();
-        toggleDropdownList();
         dropdown__value.textContent = A.textContent;
     });
 })    
